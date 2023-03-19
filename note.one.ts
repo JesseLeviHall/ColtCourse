@@ -2,11 +2,6 @@
 Colt Course Typescrypt
 
 
-
-
-
-
-
-
-
 */
+
+
