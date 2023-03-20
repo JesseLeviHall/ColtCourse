@@ -43,5 +43,10 @@ const cats: Movie = {
 // getProfit(cats) => -21166652
 
 function getProfit(movie: Movie): number {
-  return movie.boxOffice.grossWorldwide - movie.boxOffice.budget;
+  const {grossWorldwide, budget} = movie.boxOffice;
+  return grossWorldwide - budget;
+}
+
+function destructureProfit({boxOffice: {grossWorldwide, budget}}: Movie): number {
+  return grossWorldwide - budget;
 }
