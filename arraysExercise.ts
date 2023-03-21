@@ -10,7 +10,9 @@ const ages:[] = [];
 // ******************* PART 2 *******************
 // **********************************************
 // Create an array variable called gameBoard that starts as an empty array.
-// It should be typed to hold a 2 dimensional array of strings
+// It should be typed to hold a 2 dimensional array. the top level array should be numbers and the nested array should be the type of strings.
+
+
 
 // **********************************************
 // ******************* PART 3 *******************
