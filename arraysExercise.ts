@@ -24,8 +24,18 @@ const gameBoard: (number | string[])[] = [
 // An example product could be:
 // {name: "coffee mug", price: 11.50}
 
+type Product = {
+  name: string;
+  price: number;
+}
+
+
 // **********************************************
 // ******************* PART 4 *******************
 // **********************************************
 // Write a function called getTotal that accepts an array of Product types
 // It should return the sum of all the products' prices
+
+function getTotal(products: Product[]): number {
+  return products.reduce((acc, {price}) => acc + price, 0);
+}
