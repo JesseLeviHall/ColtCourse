@@ -16,10 +16,10 @@ const debra: Chicken = {
   eggsPerWeek: 2
 }
 
-//write a funciton that calle the layEggs method
-const layEggs = (chicken: Chicken) => {
-  chicken.layEggs();
+//write a funciton that calls the layEggs method
+const lay = (eggLayer: Chicken) => {
+  eggLayer.layEggs();
 }
 
-layEggs(norma);
-layEggs(debra);
+lay(norma);
+lay(debra);
