@@ -15,3 +15,11 @@ const debra: Chicken = {
   layEggs: () => console.log('Debra laid an egg!'),
   eggsPerWeek: 2
 }
+
+//write a funciton that calle the layEggs method
+const layEggs = (chicken: Chicken) => {
+  chicken.layEggs();
+}
+
+layEggs(norma);
+layEggs(debra);
