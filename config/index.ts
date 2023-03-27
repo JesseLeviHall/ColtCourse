@@ -16,7 +16,6 @@ const debra: Chicken = {
   eggsPerWeek: 12
 }
 
-//write a funciton that calls the layEggs method
 const lay = (eggLayer: Chicken, days: number) => {
   eggLayer.layEggs(days);
 }
