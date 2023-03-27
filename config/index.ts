@@ -9,3 +9,9 @@ const norma: Chicken = {
   layEggs: () => console.log('Norma laid an egg!'),
   eggsPerWeek: 5
 }
+
+const debra: Chicken = {
+  breed: 'Mini Teacup',
+  layEggs: () => console.log('Debra laid an egg!'),
+  eggsPerWeek: 2
+}
