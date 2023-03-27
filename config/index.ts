@@ -1,19 +1,24 @@
 interface Chicken {
   breed: string
-  layEggs: () => void
+  layEggs: () => number
   eggsPerWeek: number;
+}
+
+//a function that devides eggsPerWeek by 7
+const eggsPerDay = (eggLayer: Chicken) => {
+  return eggLayer.eggsPerWeek / 7;
 }
 
 const norma: Chicken = {
   breed: 'Jersey Giant',
-  layEggs: () => console.log('Norma laid an egg!'),
-  eggsPerWeek: 5
+  eggsPerWeek: 5,
+  layEggs: () => 5 / 7,
 }
 
 const debra: Chicken = {
   breed: 'Mini Teacup',
-  layEggs: () => console.log('Debra laid an egg!'),
-  eggsPerWeek: 2
+  layEggs: () => 12 / 7,
+  eggsPerWeek: 12
 }
 
 //write a funciton that calls the layEggs method
