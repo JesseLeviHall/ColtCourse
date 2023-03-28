@@ -12,7 +12,7 @@ Interfaces are used to define the structure of an object and object only. They c
 
 The config property of files allows you to specify a list of files that should be included in the compiler. 
 
-The exclude property of files allows you to specify a list of files that should be excluded from the compiler.
+The exclude property of files allows you to specify a list of files that should be excluded from the compiler. Default include node_modules but if you specify some, make sure to inclue node_modules also. 
 
 The include property of files allows you to specify a list of files that should be included in the compiler.
 
