@@ -14,6 +14,8 @@ The config property of files allows you to specify a list of files that should b
 
 The exclude property of files allows you to specify a list of files that should be excluded from the compiler.
 
+The include property of files allows you to specify a list of files that should be included in the compiler.
+
 */
 
 
