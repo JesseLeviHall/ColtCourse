@@ -16,6 +16,9 @@ The exclude property of files allows you to specify a list of files that should 
 
 The include property of files allows you to specify a list of files that should be included in the compiler.
 
+The outdir property will specify where the compiled js files go. default is in the same spot as the ts. Normally you will create a dist folder, and have compiled files there. 
+
+
 */
 
 
