@@ -10,6 +10,11 @@ Interfaces are used to define the structure of an object and object only. They c
 
  Generally - gravitate towards interface when describing an object type. Otherwise use types. 
 
+The config property of files allows you to:
+  1. Specify the path to the file
+  2. Specify the name of the file
+  3. Specify the extension of the file
+
 */
 
 
