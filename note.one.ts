@@ -18,6 +18,12 @@ The include property of files allows you to specify a list of files that should 
 
 The outdir property will specify where the compiled js files go. default is in the same spot as the ts. Normally you will create a dist folder, and have compiled files there. 
 
+typescript generics are:
+  1. A way to create reusable components
+  2. A way to create a component that can work over a variety of types rather than a single one.
+  3. A way to share logic between different components.
+  Mainly, create a relationsip between the input and output for a funciton. 
+
 
 */
 
