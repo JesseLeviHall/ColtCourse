@@ -6,7 +6,10 @@ class Player {
 		this.first = first;
 		this.last = last;
 	}
-	getScore() {
+	get fullName() {
+		return `${this.first} ${this.last}`;
+	}
+	get score() {
 		return this.#score;
 	}
 	updateScore() {
@@ -20,11 +23,10 @@ class Player {
 	}
 }
 
-const Player1 = new Player('blue', 'steel');
+const Player1 = new Player('jesus', 'bonchero');
 Player1.taunt();
 console.log(Player1.numLives);
 Player1.loseLife();
 console.log(Player1.numLives);
-console.log(Player1.getScore());
-Player1.updateScore();
-console.log(Player1.getScore());
+console.log(Player1.score);
+console.log(Player1.fullName);
