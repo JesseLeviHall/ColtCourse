@@ -12,6 +12,12 @@ class Player {
 	get score() {
 		return this.#score;
 	}
+	set score(newScore) {
+		if (newScore < 0) {
+			throw new Error('Score must be positive');
+		}
+		this.#score = newScore;
+	}
 	updateScore() {
 		this.#score++;
 	}
@@ -24,9 +30,11 @@ class Player {
 }
 
 const Player1 = new Player('jesus', 'bonchero');
+console.log(Player1.fullName);
 Player1.taunt();
 console.log(Player1.numLives);
 Player1.loseLife();
 console.log(Player1.numLives);
 console.log(Player1.score);
-console.log(Player1.fullName);
+Player1.score = 10;
+console.log(Player1.score);
