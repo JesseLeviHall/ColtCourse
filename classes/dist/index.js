@@ -9,8 +9,13 @@ class Player {
 	taunt() {
 		console.log('I am the best!');
 	}
+	loseLife() {
+		this.numLives--;
+	}
 }
 
 const Player1 = new Player('blue', 'steel');
 Player1.taunt();
-console.log(Player1);
+console.log(Player1.numLives);
+Player1.loseLife();
+console.log(Player1.numLives);
