@@ -74,7 +74,7 @@ playerOne.score = 200;
 console.log(playerOne.score);
 
 
-//an abstract class is a class that is not intended to be instantiated directly, but rather to be inherited from.
+//an abstract class is a class that is not intended to be instantiated directly, but rather to be inherited from. the difference between abract and interface classes is that abstract classes can have both abstract and concrete methods, while interfaces can only have abstract methods. abstract classes can have both abstract and concrete properties, while interfaces can only have abstract properties.
 abstract class Employee {
   constructor(public name: string, public salary: number) {}
   abstract work(): void;
