@@ -1,20 +1,25 @@
-import React from 'react';
-
+import React, {useState} from 'react';
+import Item from './models/item';
+import { v4 as getId } from 'uuid';
 import ShoppingList from './components/shoppingList';
+import AddToListForm  from './components/addToListForm';
 import './App.css';
 
+
+
 function App() {
-  const items = [
-    {id: 1, name: 'Item 1'},
-    {id: 2, name: 'Item 2'},
-    {id: 3, name: 'Item 3'},
-    {id: 4, name: 'Item 4'},
-  ]
+const [ShopItems, setItems] = useState<Item[]>([])
+
+const handleAdd = (name: string) => {
+   setItems([...ShopItems, {id: getId(), name} ])
+}
 
   return (
     <div className="App">
       <header className="App-header">
-        <ShoppingList data = {items} />
+
+        <ShoppingList data = {ShopItems} />
+        <AddToListForm handleAdd={handleAdd} />
        
       </header>
     </div>

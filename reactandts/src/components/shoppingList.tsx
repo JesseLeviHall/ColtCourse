@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface ShoppingListProps {
-  data: {id: number, name: string}[]
+  data: {id: string, name: string}[]
 }
 
 const shoppingList = ({data}: ShoppingListProps): JSX.Element => {
