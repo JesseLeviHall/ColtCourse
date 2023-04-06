@@ -24,6 +24,10 @@ typescript generics are:
   3. A way to share logic between different components.
   Mainly, create a relationsip between the input and output for a funciton. 
 
+explain type narrowing:
+  1. Type narrowing is the process of determining the type of an expression in a program at a particular point in the program.
+
+  
 
 */
 
