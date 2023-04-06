@@ -27,7 +27,17 @@ typescript generics are:
 explain type narrowing:
   1. Type narrowing is the process of determining the type of an expression in a program at a particular point in the program.
 
-  
+give an example of type narrowing used in an expression:
+  const pizza = {
+     name: 'Pepperoni',
+     toppings: 20
+    };
+
+    function orderStatus(order: any) {
+     return `Your order for ${order.name} pizza with ${order.toppings} toppings is ${order.status}`;
+    }
+
+
 
 */
 
