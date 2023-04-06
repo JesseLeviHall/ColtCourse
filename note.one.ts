@@ -37,6 +37,9 @@ give an example of type narrowing used in an expression:
      return `Your order for ${order.name} pizza with ${order.toppings} toppings is ${order.status}`;
     }
 
+    orderStatus(pizza);
+    
+
 
 
 */
