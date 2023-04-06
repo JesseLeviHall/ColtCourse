@@ -38,7 +38,28 @@ give an example of type narrowing used in an expression:
     }
 
     orderStatus(pizza);
+
+    // Type narrowing
+    function orderStatus(order: { name: string; toppings: number; status: string }) {
+      return `Your order for ${order.name} pizza with ${order.toppings} toppings is ${order.status}`;
+    }
+
+    orderStatus(pizza);
+
+    // Type narrowing with interfaces
+    interface Pizza {
+      name: string;
+      toppings: number;
+    }
+
+    function orderStatus(order: Pizza) {
+      return `Your order for ${order.name} pizza with ${order.toppings} toppings is ${order.status}`;
+    }
+
+    orderStatus(pizza);
+
     
+
 
 
 
