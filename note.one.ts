@@ -68,7 +68,13 @@ give an example of type narrowing used in an expression:
       orderStatus(pizza);
     }
 
-    
+=====================
+
+Type Predicates allows us to write custom functions that narrow the type of a value. 
+
+Type predicates are functions that take a value as an argument and return a boolean.
+
+Type predicates are used to narrow the type of a value in a conditional block.
 
 
 
