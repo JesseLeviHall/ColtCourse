@@ -72,10 +72,26 @@ give an example of type narrowing used in an expression:
 
 Type Predicates allows us to write custom functions that narrow the type of a value. 
 
-Type predicates are functions that take a value as an argument and return a boolean.
+Type predicates are functions that take a value as an argument and return a type predicate. A prediate takes the form parameterName is Type
 
-Type predicates are used to narrow the type of a value in a conditional block.
+function isCat(animal: Cat | Dog): animal is Cat {
+  return (animal as Cat).meow !== undefined;
+}
 
+function isDog(animal: Cat | Dog):
+animal is Dog {
+  return (animal as Dog).bark !== undefined;
+}
+
+function makeNoise(animal: Cat | Dog) {
+  if (isCat(animal)) {
+    animal.meow();
+  } else if (isDog(animal)) {
+    animal.bark();
+  }
+}
+
+=====================
 
 
 */
