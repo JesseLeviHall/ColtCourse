@@ -59,7 +59,16 @@ give an example of type narrowing used in an expression:
     orderStatus(pizza);
 
     
+//The instance of returns a boolean. In Typescript it looks like this:
+    function isPizza(arg: any): arg is Pizza {
+      return arg.name && arg.toppings;
+    }
 
+    if (isPizza(pizza)) {
+      orderStatus(pizza);
+    }
+
+    
 
 
 
