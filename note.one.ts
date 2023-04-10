@@ -92,7 +92,7 @@ function makeNoise(animal: Cat | Dog) {
 }
 
 =====================
-
+Discriminated unions are a common pattern in Typescript creating a literal property that is common accross multiple types. we can then narrow the type using that literal perperty. 
 
 */
 
