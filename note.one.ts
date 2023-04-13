@@ -143,6 +143,9 @@ const sammy: Rooster = {
 
 console.log(getFarmAminalSound(sammy))
 
+ .d.ts files are for declarations libs. 
+
+
 
 
 */
