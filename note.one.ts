@@ -124,24 +124,24 @@ type FarmAnimal = Rooster | Cow;
 
 function getFarmAnimalSound(animal: FarmAni) {
   switch (animal.kind) {
-    case 'rooster':
-
-
-
-    case 'cow':
-
-
-
+    case ('rooster'):
+      return "cuckoo!"
+    case ('cow'):
+      return "moo!"
     default:
       const _exhaustiveCheck: never = animal;
       return _exhaustiveCheck;
-
-
 }
 
 
+const sammy: Rooster = {
+  name: 'sammy',
+  age: 2,
+  weight: 10,
+  kind: 'rooster'
+}
 
-
+console.log(getFarmAminalSound(sammy))
 
 
 
