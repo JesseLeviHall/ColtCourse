@@ -118,7 +118,9 @@ interface Cow {
   weight: number;
 }
 
-function getFarmAnimalSound() {
+type FarmAnimal = Rooster | Cow;
+
+function getFarmAnimalSound(animal: FarmAni) {
 
 }
 
