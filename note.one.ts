@@ -110,17 +110,32 @@ interface Rooster {
   name: 'rooster';
   age: number;
   weight: number;
+  kind: 'rooster';
 }
 
 interface Cow {
   name: 'cow';
   age: number;
   weight: number;
+  kind: 'cow';
 }
 
 type FarmAnimal = Rooster | Cow;
 
 function getFarmAnimalSound(animal: FarmAni) {
+  switch (animal.kind) {
+    case 'rooster':
+
+
+
+    case 'cow':
+
+
+
+    default:
+      const _exhaustiveCheck: never = animal;
+      return _exhaustiveCheck;
+
 
 }
 
