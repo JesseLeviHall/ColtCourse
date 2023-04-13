@@ -106,6 +106,21 @@ interface Circle {
   radius: number;
 }
 
+interface Rooster {
+  name: 'rooster';
+  age: number;
+  weight: number;
+}
+
+interface Cow {
+  name: 'cow';
+  age: number;
+  weight: number;
+}
+
+function getFarmAnimalSound() {
+
+}
 
 
 
